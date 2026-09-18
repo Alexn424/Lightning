@@ -41,7 +41,7 @@ void draw(){
 int globalSign = 1;
 void mousePressed(){
   clear();
-
+  background(#000000);
   strokeWeight(10);
   stroke(#FFF862);
   int startX = 250 + ((int)(Math.random() * 400)*globalSign);
@@ -78,4 +78,3 @@ void mousePressed(){
   }
   
 }
-

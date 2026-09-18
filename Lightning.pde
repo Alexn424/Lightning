@@ -40,7 +40,6 @@ void draw(){
 
 int globalSign = 1;
 void mousePressed(){
-  clear();
   background(#000000);
   strokeWeight(10);
   stroke(#FFF862);
@@ -49,13 +48,13 @@ void mousePressed(){
   
   int endX = startX;
   int endY = 0;
-  float stroke = 0;
+  float strokeAmount = 0;
   while (endY < 500){
-    stroke += 0.05;
-    if (stroke >= 9){
-      stroke = 9;
+    strokeAmount += 0.05;
+    if (strokeAmount >= 9){
+      strokeAmount = 9;
     }
-    strokeWeight(10-stroke);
+    strokeWeight(10-strokeAmount);
     int sign = (int)(Math.random() * 2);
     if (sign == 0){
       sign = -1;

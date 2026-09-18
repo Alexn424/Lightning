@@ -43,7 +43,8 @@ void mousePressed(){
   background(#000000);
   strokeWeight(10);
   stroke(#FFF862);
-  int startX = 250 + ((int)(Math.random() * 400)*globalSign);
+  //int startX = 250 + ((int)(Math.random() * 400)*globalSign);
+  int startX = mouseX;
   int startY = 0;
   
   int endX = startX;
